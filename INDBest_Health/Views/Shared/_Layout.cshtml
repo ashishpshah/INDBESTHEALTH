@@ -21,6 +21,31 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="~/Content/assets/css/style.css">
 
+    <style type="text/css">
+
+        .animationImg {
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-name: bounce-1;
+            transform-origin: bottom;
+            animation-timing-function: linear;
+        }
+
+        @@keyframes bounce-1 {
+            0% {
+                transform: translateY(-35px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(-35px);
+            }
+        }
+    </style>
+
     @*@Scripts.Render("~/bundles/modernizr")*@
 
 </head>
@@ -325,12 +350,12 @@
                         <div class="col-auto">
                             <div class="header-button">
                                 @*<button type="button" class="icon-btn searchBoxToggler d-none d-xl-inline-block"><i class="far fa-search"></i></button>
-                                <button type="button" class="icon-btn sideMenuCart">
-                                    <span class="badge">5</span>
-                                    <i class="far fa-cart-shopping"></i>
-                                </button>
-                                <a href="appointment.html" class="th-btn">Appointment Now</a>
-                                <button type="button" class="icon-btn sideMenuInfo d-none d-xl-inline-block"><i class="far fa-bars"></i></button>*@
+                                    <button type="button" class="icon-btn sideMenuCart">
+                                        <span class="badge">5</span>
+                                        <i class="far fa-cart-shopping"></i>
+                                    </button>
+                                    <a href="appointment.html" class="th-btn">Appointment Now</a>
+                                    <button type="button" class="icon-btn sideMenuInfo d-none d-xl-inline-block"><i class="far fa-bars"></i></button>*@
                                 <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
                             </div>
                         </div>
