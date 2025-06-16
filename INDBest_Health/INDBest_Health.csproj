@@ -656,6 +656,12 @@
     <Content Include="Content\assets\js\main.js" />
     <Content Include="Content\assets\js\swiper-bundle.min.js" />
     <Content Include="Content\assets\js\vendor\jquery-3.7.1.min.js" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.all.js" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.all.min.js" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.css" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.js" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.min.css" />
+    <Content Include="Content\assets\sweetalert2\sweetalert2.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -770,6 +776,10 @@
     <Content Include="Content\assets\sass\utilities\_titles.scss" />
     <Content Include="Content\assets\sass\_update_1.scss" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Career.cshtml" />
+    <Content Include="Views\Home\Teams.cshtml" />
+    <Content Include="Views\Home\Blogs.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

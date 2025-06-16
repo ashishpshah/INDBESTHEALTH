@@ -1,0 +1,216 @@
+﻿
+@{
+    ViewBag.Title = "Apply Now";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <style type="text/css">
+        form .form-group.document-div {
+            position: relative;
+            overflow: visible;
+            flex: 0 0 66.66%;
+            max-width: 66.66%
+        }
+
+            form .form-group.document-div .file-drop-area {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                border-radius: 3px;
+                transition: .2s;
+                -o-transition: .2s;
+                -ms-transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+                flex-wrap: wrap;
+                position: relative
+            }
+
+                form .form-group.document-div .file-drop-area span {
+                    color: #333;
+                    font-weight: 400;
+                    display: block
+                }
+
+                    form .form-group.document-div .file-drop-area span.error-text.typeInvalidError {
+                        position: relative;
+                        top: 5px
+                    }
+
+                form .form-group.document-div .file-drop-area .documentUploadError {
+                    max-width: 100%;
+                    flex: 0 0 100%
+                }
+
+                form .form-group.document-div .file-drop-area .white-btn {
+                    height: 56px;
+                    padding: 0 25px 0 25px;
+                    padding-right: 45px;
+                    border: 1px solid transparent;
+                    color: var(--body-color);
+                    background-color: var(--smoke-color);
+                    border-radius: 27px;
+                    font-size: 30px;
+                    width: 100%;
+                    font-family: var(--body-font);
+                    -webkit-transition: 0.4s ease-in-out;
+                    transition: 0.4s ease-in-out;
+                    margin: 0;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                    -webkit-box-flex: 0;
+                    flex: 0 0 320px;
+                    max-width: 320px;
+                    text-align: center;
+                    box-sizing: border-box
+                }
+
+                form .form-group.document-div .file-drop-area .file-msg {
+                    overflow: hidden;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                    line-height: 1.45;
+                    padding-left: 10px;
+                    -webkit-box-flex: 0;
+                    flex: 0 0 calc(100% - 320px);
+                    max-width: calc(100% - 320px);
+                    word-break: break-word;
+                    box-sizing: border-box
+                }
+
+        form .form-group input.your-document {
+            border: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0;
+            height: 100%;
+            width: 100% !important;
+            cursor: pointer;
+            opacity: 0
+        }
+
+        @@media (max-width: 991px) {
+            form .form-group.document-div {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @@media (max-width: 767px) {
+            form .form-group.document-div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @@media (max-width: 767px) {
+            form .form-group.document-div .file-drop-area {
+                position: static;
+            }
+        }
+
+        @@media (max-width: 991px) {
+            form .form-group.document-div .file-drop-area .file-msg {
+                flex: 0 0 calc(100% - 180px);
+                max-width: calc(100% - 180px);
+            }
+        }
+
+        @@media (max-width: 767px) {
+            form .form-group.document-div .file-drop-area .file-msg {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-left: 0;
+            }
+        }
+    </style>
+}
+
+<div class="container space-top">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-8">
+            <div class="title-area text-center">
+                <h2 class="sec-title">Career</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="th-checkout-wrapper space-extra-bottom mb-5">
+    <div class="container">
+        <form id="formSave" action="@Url.Action("ApplyNow","Home", new { area = ""})" class="woocommerce-checkout mt-40" enctype="multipart/form-data">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <h2 class="h4">Candidate Details</h2>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Phone number">
+                        </div>
+                        <div class="col-12 form-group">
+                            <textarea cols="20" rows="5" class="form-control" placeholder="Write anything....."></textarea>
+                        </div>
+                        <div class="col-12 form-group document-div">
+                            <div class="file-drop-area">
+                                <input type="file" name="file_attach_contact[]" id="document-career" value="" class="form-control your-document" accept=".doc, .docx, .ppt, .pptx, .xlsx, .xls, .pdf, .zip, .txt">
+                                <span class="white-btn">Upload Resume</span>
+                                <span class="file-msg">No file chosen</span>
+                                <p class="mb-0 mt-2"> * Maximum file upload size is 10MB </p>
+                                <p class="mt-0"> * Please upload valid file format from doc, docx, ppt, pptx, xls, xlsx, pdf, zip or txt </p>
+                            </div>
+                        </div>
+                        <div class="form-row place-order">
+                            <button type="button" class="th-btn btnSubmit">Submit Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        $(document).on('change', '#document-career', function (i) {
+            debugger;
+
+            $(this).siblings(".file-msg").text('No file chosen');
+
+            if (-1 == $.inArray($(this)[0].files[0].type, ["application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/pdf"])) {
+                alert('Please upload valid file format from doc, docx or pdf')
+                $('#document-career').val(null)
+            }
+            else if (($(this)[0].files[0].size / 1024 / 1024).toFixed(2) > 2) {
+                alert('Maximum file upload size is 2MB')
+                $('#document-career').val(null)
+            }
+            else {
+                $(this).siblings(".file-msg").text($(this)[0].files[0].name);
+
+            }
+
+        });
+
+        function fnSubmitForm_Success(response, $id) {
+            debugger;
+            $('#formSave').reset();
+            alert(response.message);
+        }
+    </script>
+
+}

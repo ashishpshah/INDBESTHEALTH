@@ -47,6 +47,7 @@
     </style>
 
     @*@Scripts.Render("~/bundles/modernizr")*@
+    @RenderSection("Styles", required: false)
 
 </head>
 <body>
@@ -55,7 +56,7 @@
        Preloader
     ==============================-->
     <div class="preloader ">
-        <button class="th-btn preloaderCls">Cancel Preloader </button>
+        @*<button class="th-btn preloaderCls">Cancel Preloader </button>*@
         <div class="preloader-inner">
             <div class="loader"></div>
         </div>
@@ -213,38 +214,37 @@
             <div class="th-mobile-menu">
                 <ul>
                     <li> <a href="@Url.Action("Index","Home", new { area = ""})">Home</a> </li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="@Url.Action("About","Home", new { area = ""})">About Us</a></li>
                     <li class="menu-item-has-children">
                         <a href="#">Product</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Menu Item 1</a></li>
-                            <li><a href="#">Menu Item 2</a></li>
-                            <li><a href="#">Menu Item 3</a></li>
-                            <li><a href="#">Menu Item 4</a></li>
-                            <li><a href="#">Menu Item 5</a></li>
-                            <li><a href="#">Menu Item 6</a></li>
-                            <li><a href="#">Menu Item 7</a></li>
-                            <li><a href="#">Menu Item 8</a></li>
-                            <li><a href="#">Menu Item 9</a></li>
-                            <li><a href="#">Menu Item 10</a></li>
-                            <li><a href="#">Menu Item 11</a></li>
-                            <li><a href="#">Menu Item 12</a></li>
-                            <li><a href="#">Menu Item 13</a></li>
-                            <li><a href="#">Menu Item 14</a></li>
-                            <li><a href="#">Menu Item 15</a></li>
-                            <li><a href="#">Menu Item 16</a></li>
-                            <li><a href="#">Menu Item 17</a></li>
-                            <li><a href="#">Menu Item 18</a></li>
-                            <li><a href="#">Menu Item 19</a></li>
-                            <li><a href="#">Menu Item 20</a></li>
-                            <li><a href="#">Menu Item 21</a></li>
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                            <li><a href="#">Product 4</a></li>
+                            <li><a href="#">Product 5</a></li>
+                            <li><a href="#">Product 6</a></li>
+                            <li><a href="#">Product 7</a></li>
+                            <li><a href="#">Product 8</a></li>
+                            <li><a href="#">Product 9</a></li>
+                            <li><a href="#">Product 10</a></li>
+                            <li><a href="#">Product 11</a></li>
+                            <li><a href="#">Product 12</a></li>
+                            <li><a href="#">Product 13</a></li>
+                            <li><a href="#">Product 14</a></li>
+                            <li><a href="#">Product 15</a></li>
+                            <li><a href="#">Product 16</a></li>
+                            <li><a href="#">Product 17</a></li>
+                            <li><a href="#">Product 18</a></li>
+                            <li><a href="#">Product 19</a></li>
+                            <li><a href="#">Product 20</a></li>
                         </ul>
                     </li>
-                    <li> <a href="#">Core Team</a> </li>
-                    <li> <a href="#">Gallery</a> </li>
-                    <li> <a href="#">Blog</a> </li>
-                    <li> <a href="#">Career</a> </li>
-                    <li> <a href="#">Contact Us</a> </li>
+                    <li> <a href="@Url.Action("Teams","Home", new { area = ""})">Core Team</a> </li>
+                    <li> <a href="@Url.Action("Gallery","Home", new { area = ""})">Gallery</a> </li>
+                    <li> <a href="@Url.Action("Blogs","Home", new { area = ""})">Blog</a> </li>
+                    <li> <a href="@Url.Action("Career","Home", new { area = ""})">Career</a> </li>
+                    <li> <a href="@Url.Action("Contact","Home", new { area = ""})">Contact Us</a> </li>
                 </ul>
             </div>
         </div>
@@ -312,38 +312,37 @@
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
                                     <li> <a href="@Url.Action("Index","Home", new { area = ""})">Home</a> </li>
-                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="@Url.Action("About","Home", new { area = ""})">About Us</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Product</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Menu Item 1</a></li>
-                                            <li><a href="#">Menu Item 2</a></li>
-                                            <li><a href="#">Menu Item 3</a></li>
-                                            <li><a href="#">Menu Item 4</a></li>
-                                            <li><a href="#">Menu Item 5</a></li>
-                                            <li><a href="#">Menu Item 6</a></li>
-                                            <li><a href="#">Menu Item 7</a></li>
-                                            <li><a href="#">Menu Item 8</a></li>
-                                            <li><a href="#">Menu Item 9</a></li>
-                                            <li><a href="#">Menu Item 10</a></li>
-                                            <li><a href="#">Menu Item 11</a></li>
-                                            <li><a href="#">Menu Item 12</a></li>
-                                            <li><a href="#">Menu Item 13</a></li>
-                                            <li><a href="#">Menu Item 14</a></li>
-                                            <li><a href="#">Menu Item 15</a></li>
-                                            <li><a href="#">Menu Item 16</a></li>
-                                            <li><a href="#">Menu Item 17</a></li>
-                                            <li><a href="#">Menu Item 18</a></li>
-                                            <li><a href="#">Menu Item 19</a></li>
-                                            <li><a href="#">Menu Item 20</a></li>
-                                            <li><a href="#">Menu Item 21</a></li>
+                                            <li><a href="#">Product 1</a></li>
+                                            <li><a href="#">Product 2</a></li>
+                                            <li><a href="#">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                            <li><a href="#">Product 6</a></li>
+                                            <li><a href="#">Product 7</a></li>
+                                            <li><a href="#">Product 8</a></li>
+                                            <li><a href="#">Product 9</a></li>
+                                            <li><a href="#">Product 10</a></li>
+                                            <li><a href="#">Product 11</a></li>
+                                            <li><a href="#">Product 12</a></li>
+                                            <li><a href="#">Product 13</a></li>
+                                            <li><a href="#">Product 14</a></li>
+                                            <li><a href="#">Product 15</a></li>
+                                            <li><a href="#">Product 16</a></li>
+                                            <li><a href="#">Product 17</a></li>
+                                            <li><a href="#">Product 18</a></li>
+                                            <li><a href="#">Product 19</a></li>
+                                            <li><a href="#">Product 20</a></li>
                                         </ul>
                                     </li>
-                                    <li> <a href="#">Core Team</a> </li>
-                                    <li> <a href="#">Gallery</a> </li>
-                                    <li> <a href="#">Blog</a> </li>
-                                    <li> <a href="#">Career</a> </li>
-                                    <li> <a href="#">Contact Us</a> </li>
+                                    <li> <a href="@Url.Action("Teams","Home", new { area = ""})">Core Team</a> </li>
+                                    <li> <a href="@Url.Action("Gallery","Home", new { area = ""})">Gallery</a> </li>
+                                    <li> <a href="@Url.Action("Blogs","Home", new { area = ""})">Blog</a> </li>
+                                    <li> <a href="@Url.Action("Career","Home", new { area = ""})">Career</a> </li>
+                                    <li> <a href="@Url.Action("Contact","Home", new { area = ""})">Contact Us</a> </li>
                                 </ul>
                             </nav>
                         </div>
@@ -550,6 +549,107 @@
     <!-- Main Js File -->
     <script src="~/Content/assets/js/main.js"></script>
 
-    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+        $('body').on('click', '.btnSubmit', function (e) {
+            e.preventDefault();
+            fnSubmitForm($(this).parents('form').attr('id'));
+        });
+
+        function ShowLoader($IsShow) {
+            if ($IsShow == true) $(".preloader").css('display', 'block');
+            else $(".preloader").css('display', 'none');
+        }
+
+        function fnSubmitForm($id) {
+            ShowLoader(true);
+
+            var $form = $('#' + $id);
+
+            if (true) {
+
+                let formData = new FormData();
+
+                const array = $form.serializeArray();
+
+                $.each($('#' + $id + ' select'), function (key, input) {
+                    if ((typeof input.value != 'undefined' && input.value != null && input.value.length > 0) && !input.hasAttribute('disabled') && !$(input).hasClass('temp'))
+                        array.filter(function (obj) {
+                            if (obj['name'] == $(input).attr('name')) {
+                                obj['value'] = $('#' + $(input).attr('id') + ' option:selected').val()
+                            }
+                        })
+                });
+
+                $.each($('#' + $id + ' input[type="checkbox"]'), function (key, input) {
+                    if ((typeof input.value != 'undefined' && input.value != null && input.value.length > 0) && !input.hasAttribute('disabled') && !$(input).hasClass('temp'))
+                        array.filter(function (obj) {
+                            if (obj['name'] == $(input).attr('name')) {
+                                obj['value'] = $(input).is(':checked')
+                            }
+                        })
+                });
+
+                $.each($('#' + $id + ' input[type="radio"]'), function (key, input) {
+                    if ((typeof input.value != 'undefined' && input.value != null && input.value.length > 0) && !input.hasAttribute('disabled') && !$(input).hasClass('temp'))
+                        array.filter(function (obj) {
+                            if (obj['name'] == $(input).attr('name')) {
+                                obj['value'] = $('input[name="' + $(input).attr('name') + '"]:checked').val()
+                            }
+                        })
+                });
+
+                $.each(array, function (key, input) {
+                    if (typeof input.name != 'undefined' && input.name != null && input.name.length > 0 && input.name != "__RequestVerificationToken")
+                        formData.append(input.name, input.value);
+                });
+
+                var inputFiles = $('#' + $id + ' input[type="file"]');
+
+                if (typeof inputFiles != 'undefined' && inputFiles != null && inputFiles.length > 0)
+                    $.each(inputFiles, function (key, input) {
+                        if ((typeof input.value != 'undefined' && input.value != null && input.value.length > 0) && !input.hasAttribute('disabled') && !$(input).hasClass('temp') && !$(input).hasClass('temp_fileUpload')) {
+                            var file = document.getElementById('' + input.getAttribute('id')).files[0];
+                            if (typeof input.getAttribute('name') == 'undefined' || input.getAttribute('name') == null || input.getAttribute('name').length == 0) {
+                                formData.append("files", file);
+                            } else {
+                                formData.append(input.getAttribute('name'), file);
+                            }
+                        }
+                    });
+
+                $.ajax({
+                    type: 'POST',
+                    url: $form.attr('action'),
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    dataType: "json",
+                    success: function (response) {
+                        debugger;
+                        try {
+                            ShowLoader(false);
+                            if (response.success === true) {
+                                if (typeof response.redirectURL != 'undefined' && response.redirectURL != '' && response.redirectURL != null)
+                                    window.location = response.redirectURL;
+                                else
+                                    try { fnSubmitForm_Success(response, $id); } catch { }
+                            }
+                            else { alert(response.message); }
+                        } catch { window.location.reload(); }
+                    },
+                    failure: function (response) { ShowLoader(false); },
+                    error: function (response) { ShowLoader(false); }
+                });
+
+            }
+            else { ShowLoader(false); return false; }
+
+        }
+
+    </script>
+
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
