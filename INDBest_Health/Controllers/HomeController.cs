@@ -43,6 +43,13 @@ namespace INDBest_Health.Controllers
 
 			return View();
 		}
+		
+		public ActionResult Gallery()
+		{
+			ViewBag.Message = "Your contact page.";
+
+			return View();
+		}
 
 		public ActionResult Career()
 		{
