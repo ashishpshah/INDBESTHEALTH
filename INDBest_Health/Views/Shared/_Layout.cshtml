@@ -8,6 +8,8 @@
     <!--==============================
         All CSS File
     ============================== -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400%7CLato:400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -44,6 +46,19 @@
                 transform: translateY(-35px);
             }
         }
+
+        .footer-wrapper p, .footer-wrapper a, .footer-wrapper i {
+            color: var(--white-color) !important;
+        }
+
+        .footer-wrapper .th-social a {
+            background-color: transparent !important;
+        }
+
+            .footer-wrapper .th-social a:hover {
+                background-color: var(--theme-color) !important;
+                color: var(--white-color) !important;
+            }
     </style>
 
     @*@Scripts.Render("~/bundles/modernizr")*@
@@ -262,7 +277,7 @@
                                 <li class="d-none d-sm-inline-block"><i class="fas fa-phone icon-btn"></i><b>Phone:</b> <a href="tel:+919825097151">+91 98250 97151</a></li>
                                 <li class="d-none d-sm-inline-block"><i class="fas fa-envelope icon-btn"></i><b>Email:</b> <a href="mailto:info@mediax.com">info@indbest.com</a></li>
                                 <li class="d-none d-xxl-inline-block">
-                                <i class="fas fa-location-dot icon-btn"></i> Survey No.888,Near Kamla Amrut Industrial Park,Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
+                                    <i class="fas fa-location-dot icon-btn"></i> Survey No.888,Near Kamla Amrut Industrial Park,Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
                                 </li>
                             </ul>
                         </div>
@@ -271,18 +286,18 @@
                         <div class="header-links">
                             <ul>
                                 @*<li class="d-none d-md-inline-block">
-                                    <div class="dropdown-link">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="true"><img src="~/Content/assets/img/icon/english.png" alt="icon"> English</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                            <li>
-                                                <a href="#">German</a>
-                                                <a href="#">French</a>
-                                                <a href="#">Italian</a>
-                                                <a href="#">Latvian</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>*@
+                                        <div class="dropdown-link">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="true"><img src="~/Content/assets/img/icon/english.png" alt="icon"> English</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                <li>
+                                                    <a href="#">German</a>
+                                                    <a href="#">French</a>
+                                                    <a href="#">Italian</a>
+                                                    <a href="#">Latvian</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>*@
                                 <li>
                                     <div class="social-links">
                                         <span class="social-title">Follow Us On: </span>
@@ -396,16 +411,16 @@
     <footer class="footer-wrapper footer-layout1" data-bg-src="~/Content/assets/img/bg/footer_bg_1.jpg">
         <div class="container z-index-common">
             @*<div class="newsletter-wrap">
-                <div class="newsletter-content">
-                    <h2 class="sec-title">Subscribe for newsletter</h2>
-                </div>
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Email Address" required="">
+                    <div class="newsletter-content">
+                        <h2 class="sec-title">Subscribe for newsletter</h2>
                     </div>
-                    <button type="submit" class="th-btn shadow-1">Subscribe</button>
-                </form>
-            </div>*@
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email Address" required="">
+                        </div>
+                        <button type="submit" class="th-btn shadow-1">Subscribe</button>
+                    </form>
+                </div>*@
         </div>
         <div class="widget-area">
             <div class="container">
