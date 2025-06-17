@@ -110,8 +110,10 @@ Version: 1.0.0
     --success-color: #28a745;
     --error-color: #dc3545;
     --th-border-color: #D8DDE1;
-    --title-font: 'Outfit', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
+    /*--title-font: 'Outfit', sans-serif;*/
+    --title-font: 'Playfair Display';
+    /*--body-font: 'DM Sans', sans-serif;*/
+    --body-font: 'Lato';
     --icon-font: "Font Awesome 6 Pro";
     --main-container: 1224px;
     --container-gutters: 24px;
@@ -5164,10 +5166,10 @@ ol.wp-block-rss {
         }
 
 
-.main-menu ul.sub-menu {
-    padding: 18px 20px 18px 18px;
-    left: -27px;
-}
+    .main-menu ul.sub-menu {
+        padding: 18px 20px 18px 18px;
+        left: -27px;
+    }
 
 
         .main-menu ul.sub-menu li {
@@ -5204,7 +5206,7 @@ ol.wp-block-rss {
                 text-transform: capitalize;
             }
 
-                /*.main-menu ul.sub-menu li a:before {
+            /*.main-menu ul.sub-menu li a:before {
                     content: "\f469";
                     position: absolute;
                     top: 6px;
@@ -14319,7 +14321,8 @@ span.select2-selection.select2-selection--single:focus {
     }
 
         .service-card .box-title a:hover {
-            color: var(--theme-color);
+            /*color: var(--theme-color);*/
+            color: var(--theme-color2);
         }
 
     .service-card .box-text {
@@ -14339,7 +14342,8 @@ span.select2-selection.select2-selection--single:focus {
     }
 
     .service-card:hover .box-title {
-        color: var(--white-color);
+        /*color: var(--white-color);*/
+        color: var(--theme-color2);
     }
 
     .service-card:hover .box-text {
