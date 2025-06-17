@@ -18,43 +18,31 @@ namespace INDBest_Health.Controllers
 
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
-
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 
 		public ActionResult Blogs()
 		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 
 		public ActionResult Teams()
 		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 		
 		public ActionResult Gallery()
 		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 
 		public ActionResult Career()
 		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 
