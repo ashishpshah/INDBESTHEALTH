@@ -14838,7 +14838,7 @@ span.select2-selection.select2-selection--single:focus {
 
     .process-card .box-img .img {
         border: 2px solid var(--theme-color);
-        border-radius: 99px;
+        border-radius: 10px;
         overflow: hidden;
     }
 
