@@ -36,6 +36,11 @@ namespace INDBest_Health.Controllers
 			return View();
 		}
 		
+		public ActionResult TeamMemberDetails()
+		{
+			return View();
+		}
+		
 		public ActionResult Gallery()
 		{
 			return View();
