@@ -21,6 +21,11 @@ namespace INDBest_Health.Controllers
 			return View();
 		}
 
+		public ActionResult Product()
+		{
+			return View();
+		}
+
 		public ActionResult Contact()
 		{
 			return View();
@@ -35,12 +40,12 @@ namespace INDBest_Health.Controllers
 		{
 			return View();
 		}
-		
+
 		public ActionResult TeamMemberDetails()
 		{
 			return View();
 		}
-		
+
 		public ActionResult Gallery()
 		{
 			return View();
