@@ -133,6 +133,8 @@
     <Content Include="Content\assets\fonts\fontawesome\regular.svg" />
     <Content Include="Content\assets\fonts\fontawesome\solid.svg" />
     <Content Include="Content\assets\fonts\fontawesome\thin.svg" />
+    <Content Include="Content\assets\img\1.jpg" />
+    <Content Include="Content\assets\img\2.jpg" />
     <Content Include="Content\assets\img\About.jpg" />
     <Content Include="Content\assets\img\blog\1.jpg" />
     <Content Include="Content\assets\img\blog\2.jpg" />
@@ -152,6 +154,7 @@
     <Content Include="Content\assets\img\gallery\3.jpg" />
     <Content Include="Content\assets\img\home190.jpg" />
     <Content Include="Content\assets\img\Indbest-logo-04.png" />
+    <Content Include="Content\assets\img\INDBOTTLE.png" />
     <Content Include="Content\assets\img\logo.jfif" />
     <Content Include="Content\assets\img\logo.jpg" />
     <Content Include="Content\assets\img\bg\blog_bg_1.jpg" />
@@ -550,6 +553,7 @@
     <Content Include="Content\assets\img\product\product_thumb_1_3.jpg" />
     <Content Include="Content\assets\img\product\product_thumb_1_4.jpg" />
     <Content Include="Content\assets\img\product\product_thumb_1_5.jpg" />
+    <Content Include="Content\assets\img\ProgressArrow.png" />
     <Content Include="Content\assets\img\service\service_block_1.jpg" />
     <Content Include="Content\assets\img\service\service_block_2.jpg" />
     <Content Include="Content\assets\img\service\service_block_3.jpg" />
@@ -668,6 +672,9 @@
     <Content Include="Content\assets\img\theme-img\title_icon.svg" />
     <Content Include="Content\assets\img\theme-img\title_icon_2.svg" />
     <Content Include="Content\assets\img\theme-img\title_icon_white.svg" />
+    <Content Include="Content\assets\img\W1.jpg" />
+    <Content Include="Content\assets\img\W2.jpg" />
+    <Content Include="Content\assets\img\W3.jpg" />
     <Content Include="Content\assets\img\WhyChooseUs.jpg" />
     <Content Include="Content\assets\img\work_process\1.png" />
     <Content Include="Content\assets\img\work_process\2.png" />
