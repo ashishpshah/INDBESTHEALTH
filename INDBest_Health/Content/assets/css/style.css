@@ -118,7 +118,7 @@ Version: 1.0.0
     --main-container: 1224px;
     --container-gutters: 24px;
     --section-space: 120px;
-    --section-space-mobile: 80px;
+    --section-space-mobile: 9px;
     --section-title-space: 60px;
     --ripple-ani-duration: 5s;
 }
