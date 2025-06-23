@@ -429,14 +429,13 @@
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Product</a></li>
-                                    <li><a href="#">Core Team</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Career</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                                    <li><a href="@Url.Action("About","Home")">About Us</a></li>                                    
+                                    <li><a href="@Url.Action("Teams","Home")">Core Team</a></li>
+                                    <li><a href="@Url.Action("Gallery","Home")">Gallery</a></li>
+                                    <li><a href="@Url.Action("Blogs","Home")">Blog</a></li>
+                                    <li><a href="@Url.Action("Career","Home")">Career</a></li>
+                                    <li><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -446,41 +445,12 @@
                             <h3 class="widget_title">Products</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="#">Domestic</a></li>
-                                    <li><a href="#">International</a></li>                                    
+                                    <li><a href="@Url.Action("Domestic","Home")">Domestic</a></li>
+                                    <li><a href="@Url.Action("International","Home")">International</a></li>                                    
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Recent Posts</h3>
-                            <div class="recent-post-wrap">
-                                <div class="recent-post">
-                                    <div class="media-img">
-                                        <a href="blog-details.html"><img src="~/Content/assets/img/blog/recent-post-2-1.jpg" alt="Blog Image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">How Business Is Taking Over & What to Do About It</a></h4>
-                                        <div class="recent-post-meta">
-                                            <a href="#"><i class="fal fa-calendar"></i>21 Jun, 2024</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img">
-                                        <a href="blog-details.html"><img src="~/Content/assets/img/blog/recent-post-2-2.jpg" alt="Blog Image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Health vs. Wealth Navigate Business in Medicine</a></h4>
-                                        <div class="recent-post-meta">
-                                            <a href="#"><i class="fal fa-calendar"></i>22 Jun, 2024</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>                   
                 </div>
             </div>
         </div>

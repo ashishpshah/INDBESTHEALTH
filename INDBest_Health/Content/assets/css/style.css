@@ -15096,6 +15096,7 @@ span.select2-selection.select2-selection--single:focus {
 
         .gallery-card .box-img img {
             width: 100%;
+            padding-top : 10px !important;
             /* Extra small devices */
         }
 
@@ -15103,12 +15104,14 @@ span.select2-selection.select2-selection--single:focus {
     .gallery-card .box-img img {
         min-height: 350px;
         object-fit: cover;
+        padding-top: 10px !important
     }
 }
 
 @media (max-width: 575px) {
     .gallery-card .box-img img {
         min-height: 300px;
+        padding-top: 10px !important
     }
 }
 
