@@ -26,6 +26,16 @@ namespace INDBest_Health.Controllers
 			return View();
 		}
 
+		public ActionResult Domestic()
+		{
+			return View();
+		}
+
+		public ActionResult International()
+		{
+			return View();
+		}
+
 		public ActionResult Contact()
 		{
 			return View();
