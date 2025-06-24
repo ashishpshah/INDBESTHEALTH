@@ -68,6 +68,22 @@
         .choose-feature-wrap:before {
             display: none !important;
         }
+
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 32rem;
+        }
     </style>
 
     @*@Scripts.Render("~/bundles/modernizr")*@
@@ -177,7 +193,7 @@
                         <i class="fal fa-location-dot"></i>
                         @*2478 Street City Ohio 90255*@
                         Survey No.888,Near Kamla Amrut Industrial Park,
-                    Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
+                        Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
                     </p>
                     <p class="footer-info">
                         <i class="fal fa-envelope"></i>
@@ -199,12 +215,12 @@
                 <h3 class="widget_title">Let’s Stay In Touch</h3>
                 <div class="newsletter-widget">
                     @*<p class="footer-text">Subscribe for newsletter</p>
-                    <form action="#" class="newsletter-form">
-                        <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Enter Email" required="">
-                        </div>
-                        <button type="submit" class="simple-icon"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>*@
+                        <form action="#" class="newsletter-form">
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Enter Email" required="">
+                            </div>
+                            <button type="submit" class="simple-icon"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>*@
                     <div class="form-group">
                         <input type="checkbox" id="checkboxagree" name="checkboxagree">
                         <label for="checkboxagree">I agree with the terms & conditions</label>
@@ -411,7 +427,7 @@
                                     <i class="fal fa-location-dot"></i>
                                     @*2478 Street City Ohio 90255*@
                                     Survey No.888,Near Kamla Amrut Industrial Park
-                                Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
+                                    Village : Irana, Ta : Kadi Dist : Mehsana Gujarat
                                 </p>
                                 <p class="footer-info">
                                     <i class="fal fa-envelope"></i>
@@ -420,7 +436,7 @@
                                 <p class="footer-info">
                                     <i class="fal fa-phone"></i>
                                     <a href="tel:+40276328246" class="info-box_link">+(91)98250 97151</a>
-                                </p>    
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -430,7 +446,7 @@
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="@Url.Action("Index","Home")">Home</a></li>
-                                    <li><a href="@Url.Action("About","Home")">About Us</a></li>                                    
+                                    <li><a href="@Url.Action("About","Home")">About Us</a></li>
                                     <li><a href="@Url.Action("Teams","Home")">Core Team</a></li>
                                     <li><a href="@Url.Action("Gallery","Home")">Gallery</a></li>
                                     <li><a href="@Url.Action("Blogs","Home")">Blog</a></li>
@@ -446,11 +462,11 @@
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="@Url.Action("Domestic","Home")">Domestic</a></li>
-                                    <li><a href="@Url.Action("International","Home")">International</a></li>                                    
+                                    <li><a href="@Url.Action("International","Home")">International</a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </div>

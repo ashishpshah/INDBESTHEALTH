@@ -720,6 +720,7 @@
     <Content Include="Content\assets\sweetalert2\sweetalert2.js" />
     <Content Include="Content\assets\sweetalert2\sweetalert2.min.css" />
     <Content Include="Content\assets\sweetalert2\sweetalert2.min.js" />
+    <Content Include="Content\assets\video\home_slider_bg.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
